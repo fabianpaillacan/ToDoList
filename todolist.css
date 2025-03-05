@@ -54,7 +54,7 @@ body {
 .slider:before {
     position: absolute;
     content: "";
-    top: 14%;
+    top: 10%;
     height: 18px;
     width: 18px;
     left: 4px;
@@ -107,11 +107,12 @@ input[type="text"] {
 #add {
     background: #2B2D2F;
     text-align: center;
+    justify-content: center;
+    top:9%;
     position: absolute;
-    top: 8.5%;
     font: bold 1.25rem/1 poppins;
     color: #71DFBE;
-    transform: translateY(-50%);
+   /* transform: translateY(-50%);*/
     cursor: pointer;
     border-radius: 4px;
 }
@@ -175,6 +176,23 @@ input[type="text"] {
     }
 
     #cornerSvg {
+        left:78%;
         width: 100px;
+    }
+    #add {
+        background: #2B2D2F;
+        text-align: center;
+        justify-content: center;
+        top:5.5%;
+        position: absolute;
+        font: bold 1.25rem/1 poppins;
+        color: #71DFBE;
+       /* transform: translateY(-50%);*/
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .slider:before {
+        top:3%;
+
     }
 }

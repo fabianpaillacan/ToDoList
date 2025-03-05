@@ -4,28 +4,28 @@ header {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
-/* Estilos generales para el tema */
+
 body {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Modo oscuro */
 .dark-mode {
     background-color: #222;
     color: white;
 }
 
-/* Contenedor del interruptor */
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
     font-family: Arial, sans-serif;
-    margin-top: 90px;
     right: 0;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
 }
 
-/* Estilos del interruptor */
 .theme-switch {
     position: relative;
     display: inline-block;
@@ -63,7 +63,6 @@ body {
     border-radius: 50%;
 }
 
-/* Cuando el checkbox está activado (modo oscuro) */
 input:checked + .slider {
     background-color: #8a2be2;
 }
@@ -72,11 +71,11 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-
 .container {
-    width: 50%;
+    width: 90%;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +92,8 @@ input[type="text"] {
     background: transparent;
     color: #FFF;
     font-size: 20px;
-    width: 350px;
+    width: 90%;
+    max-width: 400px;
 }
 
 ::-webkit-input-placeholder {
@@ -107,7 +107,7 @@ input[type="text"] {
     background: #2B2D2F;
     text-align: center;
     position: absolute;
-    top: 55px;
+    top: 65px;
     font: bold 1.25rem/1 poppins;
     color: #71DFBE;
     transform: translateY(-50%);
@@ -125,14 +125,17 @@ input[type="text"] {
 
 .tarea {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .tarea-texto {
     margin-left: 10px;
     color: white;
-    font-size: 20px;
+    font-size: clamp(16px, 4vw, 20px);
     flex-grow: 1;
 }
 
@@ -150,10 +153,27 @@ input[type="text"] {
     background-color: #71DFBE;
     color: #2B2D2F;
 }
+
 #cornerSvg {
     position: fixed;
-    top:0;
+    top: 0;
     right: 10px;
-    width: 200px;  /* Ajusta el tamaño del SVG */
+    width: 200px;
     height: auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .theme-switch-wrapper {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #cornerSvg {
+        width: 100px;
+    }
 }

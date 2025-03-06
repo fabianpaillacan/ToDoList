@@ -15,17 +15,15 @@ body {
 }
 
 .theme-switch-wrapper {
-    display: flex;
-    align-items: center;
     font-family: Arial, sans-serif;
+    text-align: center;
     right: 0;
-    justify-content: center;
-    position: absolute;
+    margin: 0 auto;
+    position: static;
     bottom: 0;
     width: 100%;
     height: 40px;
 }
-
 .theme-switch {
     position: relative;
     display: inline-block;
@@ -108,11 +106,11 @@ input[type="text"] {
     background: #2B2D2F;
     text-align: center;
     justify-content: center;
-    top:9%;
+    top:11%;
     position: absolute;
     font: bold 1.25rem/1 poppins;
     color: #71DFBE;
-   /* transform: translateY(-50%);*/
+   transform: translateY(-50%);
     cursor: pointer;
     border-radius: 4px;
 }
@@ -183,7 +181,7 @@ input[type="text"] {
         background: #2B2D2F;
         text-align: center;
         justify-content: center;
-        top:5.5%;
+        top:7%;
         position: absolute;
         font: bold 1.25rem/1 poppins;
         color: #71DFBE;

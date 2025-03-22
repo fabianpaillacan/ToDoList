@@ -1,0 +1,1 @@
+Programa To Do List, utiliza el localStorage para no perder las tareas pendientes al cerrar el programa. Se proporciona la edicion, agregar y eliminar las tareas o recordatorios, posee un diseno responsive. Posee para escoger un tema claro u oscuro.
